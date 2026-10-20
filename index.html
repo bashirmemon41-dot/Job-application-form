@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Job Application Form</h2>
+
+    <form id="jobForm">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Phone</label>
+        <div class="phone-container">
+            <span id="flagDisplay" class="flag-display">🇺🇸</span>
+            <select id="countryCode">
+                <option value="+1" data-flag="🇺🇸">+1 USA</option>
+                <option value="+44" data-flag="🇬🇧">+44 UK</option>
+                <option value="+91" data-flag="🇮🇳">+91 India</option>
+                <option value="+86" data-flag="🇨🇳">+86 China</option>
+                <option value="+49" data-flag="🇩🇪">+49 Germany</option>
+                <option value="+33" data-flag="🇫🇷">+33 France</option>
+                <option value="+81" data-flag="🇯🇵">+81 Japan</option>
+                <option value="+61" data-flag="🇦🇺">+61 Australia</option>
+                <option value="+7" data-flag="🇷🇺">+7 Russia</option>
+                <option value="+55" data-flag="🇧🇷">+55 Brazil</option>
+                <option value="+34" data-flag="🇪🇸">+34 Spain</option>
+                <option value="+39" data-flag="🇮🇹">+39 Italy</option>
+                <option value="+31" data-flag="🇳🇱">+31 Netherlands</option>
+                <option value="+46" data-flag="🇸🇪">+46 Sweden</option>
+                <option value="+47" data-flag="🇳🇴">+47 Norway</option>
+                <option value="+45" data-flag="🇩🇰">+45 Denmark</option>
+                <option value="+41" data-flag="🇨🇭">+41 Switzerland</option>
+                <option value="+43" data-flag="🇦🇹">+43 Austria</option>
+                <option value="+32" data-flag="🇧🇪">+32 Belgium</option>
+                <option value="+48" data-flag="🇵🇱">+48 Poland</option>
+                <option value="+82" data-flag="🇰🇷">+82 South Korea</option>
+                <option value="+65" data-flag="🇸🇬">+65 Singapore</option>
+                <option value="+60" data-flag="🇲🇾">+60 Malaysia</option>
+                <option value="+66" data-flag="🇹🇭">+66 Thailand</option>
+                <option value="+84" data-flag="🇻🇳">+84 Vietnam</option>
+                <option value="+62" data-flag="🇮🇩">+62 Indonesia</option>
+                <option value="+63" data-flag="🇵🇭">+63 Philippines</option>
+                <option value="+64" data-flag="🇳🇿">+64 New Zealand</option>
+                <option value="+27" data-flag="🇿🇦">+27 South Africa</option>
+                <option value="+20" data-flag="🇪🇬">+20 Egypt</option>
+                <option value="+971" data-flag="🇦🇪">+971 UAE</option>
+                <option value="+966" data-flag="🇸🇦">+966 Saudi Arabia</option>
+                <option value="+52" data-flag="🇲🇽">+52 Mexico</option>
+                <option value="+54" data-flag="🇦🇷">+54 Argentina</option>
+                <option value="+56" data-flag="🇨🇱">+56 Chile</option>
+                <option value="+57" data-flag="🇨🇴">+57 Colombia</option>
+                <option value="+51" data-flag="🇵🇪">+51 Peru</option>
+                <option value="+90" data-flag="🇹🇷">+90 Turkey</option>
+                <option value="+98" data-flag="🇮🇷">+98 Iran</option>
+                <option value="+92" data-flag="🇵🇰">+92 Pakistan</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Enter phone number">
+        </div>
+
+        <label>Message</label>
+        <textarea id="message" placeholder="Enter your message"></textarea>
+
+        <button type="submit">Submit</button>
+        <p id="error"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
